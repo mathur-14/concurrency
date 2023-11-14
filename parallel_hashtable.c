@@ -9,6 +9,7 @@
 #define NUM_KEYS 100000   // Number of keys inserted per thread
 int num_threads = 1;      // Number of threads (configurable)
 int keys[NUM_KEYS];
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 
 typedef struct _bucket_entry {
   int key;
@@ -34,19 +35,26 @@ void insert(int key, int val) {
   int i = key % NUM_BUCKETS;
   bucket_entry *e = (bucket_entry *) malloc(sizeof(bucket_entry));
   if (!e) panic("No memory to allocate bucket!");
+  pthread_mutex_lock(&lock);
   e->next = table[i];
   e->key = key;
   e->val = val;
   table[i] = e;
+  pthread_mutex_unlock(&lock);
 }
 
 // Retrieves an entry from the hash table by key
 // Returns NULL if the key isn't found in the table
 bucket_entry * retrieve(int key) {
   bucket_entry *b;
+  pthread_mutex_lock(&lock);
   for (b = table[key % NUM_BUCKETS]; b != NULL; b = b->next) {
-    if (b->key == key) return b;
+    if (b->key == key) {
+      pthread_mutex_unlock(&lock);
+      return b;
+    }
   }
+  pthread_mutex_unlock(&lock);
   return NULL;
 }
 
