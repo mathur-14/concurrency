@@ -1,454 +1,461 @@
+MUTEX:
+
 root@00c8b66ebaa9:/# for i in {1..15}; do ./parallel_mutex $i; done
-[main] Inserted 100000 keys in 0.009650 seconds
+[main] Inserted 100000 keys in 0.009803 seconds
 [thread 0] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.490946 seconds
-[main] Inserted 100000 keys in 0.005688 seconds
-[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 3.455505 seconds
+[main] Inserted 100000 keys in 0.005798 seconds
 [thread 1] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.450945 seconds
-[main] Inserted 100000 keys in 0.005171 seconds
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 2.085046 seconds
+[main] Inserted 100000 keys in 0.004692 seconds
 [thread 2] 0 keys lost!
-[thread 0] 0 keys lost!
 [thread 1] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.634163 seconds
-[main] Inserted 100000 keys in 0.006412 seconds
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.397856 seconds
+[main] Inserted 100000 keys in 0.006971 seconds
+[thread 0] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
 [thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 2] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.555542 seconds
-[main] Inserted 100000 keys in 0.007312 seconds
-[thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 2] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.059200 seconds
+[main] Inserted 100000 keys in 0.006780 seconds
 [thread 4] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.655336 seconds
-[main] Inserted 100000 keys in 0.005624 seconds
-[thread 2] 0 keys lost!
-[thread 4] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
 [thread 0] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 2] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.078593 seconds
+[main] Inserted 100000 keys in 0.007056 seconds
+[thread 0] 0 keys lost!
+[thread 4] 0 keys lost!
 [thread 5] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.649706 seconds
-[main] Inserted 100000 keys in 0.007073 seconds
-[thread 5] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 1] 0 keys lost!
 [thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 3] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.105141 seconds
+[main] Inserted 100000 keys in 0.007018 seconds
 [thread 4] 0 keys lost!
+[thread 3] 0 keys lost!
 [thread 6] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.667525 seconds
-[main] Inserted 100000 keys in 0.006148 seconds
-[thread 3] 0 keys lost!
 [thread 5] 0 keys lost!
-[thread 0] 0 keys lost!
 [thread 2] 0 keys lost!
 [thread 1] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.182315 seconds
+[main] Inserted 100000 keys in 0.008534 seconds
+[thread 5] 0 keys lost!
 [thread 7] 0 keys lost!
-[thread 4] 0 keys lost!
-[thread 6] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.681084 seconds
-[main] Inserted 100000 keys in 0.007322 seconds
 [thread 0] 0 keys lost!
-[thread 7] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 4] 0 keys lost!
-[thread 5] 0 keys lost!
 [thread 6] 0 keys lost!
+[thread 2] 0 keys lost!
 [thread 3] 0 keys lost!
+[thread 1] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.137964 seconds
+[main] Inserted 100000 keys in 0.006743 seconds
+[thread 7] 0 keys lost!
 [thread 8] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.838934 seconds
-[main] Inserted 100000 keys in 0.007432 seconds
 [thread 6] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 0] 0 keys lost!
+[thread 4] 0 keys lost!
 [thread 1] 0 keys lost!
 [thread 5] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.048138 seconds
+[main] Inserted 100000 keys in 0.007555 seconds
 [thread 7] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 5] 0 keys lost!
 [thread 9] 0 keys lost!
 [thread 4] 0 keys lost!
-[thread 8] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.870355 seconds
-[main] Inserted 100000 keys in 0.007537 seconds
-[thread 1] 0 keys lost!
 [thread 3] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 0] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 9] 0 keys lost!
-[thread 8] 0 keys lost!
-[thread 4] 0 keys lost!
+[thread 1] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.159016 seconds
+[main] Inserted 100000 keys in 0.007459 seconds
 [thread 10] 0 keys lost!
-[thread 7] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.883737 seconds
-[main] Inserted 100000 keys in 0.007400 seconds
-[thread 5] 0 keys lost!
-[thread 3] 0 keys lost!
 [thread 6] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 4] 0 keys lost!
 [thread 7] 0 keys lost!
+[thread 9] 0 keys lost!
+[thread 4] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 1] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.204551 seconds
+[main] Inserted 100000 keys in 0.007776 seconds
+[thread 8] 0 keys lost!
+[thread 11] 0 keys lost!
 [thread 10] 0 keys lost!
 [thread 9] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 4] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 1] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.182578 seconds
+[main] Inserted 100000 keys in 0.006133 seconds
 [thread 11] 0 keys lost!
 [thread 8] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.898982 seconds
-[main] Inserted 100000 keys in 0.007011 seconds
-[thread 4] 0 keys lost!
 [thread 7] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 9] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 5] 0 keys lost!
+[thread 12] 0 keys lost!
 [thread 10] 0 keys lost!
-[thread 12] 0 keys lost!
-[thread 8] 0 keys lost!
 [thread 6] 0 keys lost!
-[thread 11] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 5.277910 seconds
-[main] Inserted 100000 keys in 0.007660 seconds
-[thread 1] 0 keys lost!
-[thread 4] 0 keys lost!
-[thread 0] 0 keys lost!
 [thread 3] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 7] 0 keys lost!
-[thread 12] 0 keys lost!
 [thread 9] 0 keys lost!
-[thread 8] 0 keys lost!
+[thread 4] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.256928 seconds
+[main] Inserted 100000 keys in 0.007825 seconds
+[thread 9] 0 keys lost!
 [thread 13] 0 keys lost!
 [thread 10] 0 keys lost!
 [thread 11] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 5.206157 seconds
-[main] Inserted 100000 keys in 0.007731 seconds
-[thread 12] 0 keys lost!
 [thread 4] 0 keys lost!
-[thread 7] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 2] 0 keys lost!
+[thread 12] 0 keys lost!
 [thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
 [thread 8] 0 keys lost!
-[thread 10] 0 keys lost!
-[thread 9] 0 keys lost!
-[thread 11] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 1] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.194570 seconds
+[main] Inserted 100000 keys in 0.007780 seconds
+[thread 12] 0 keys lost!
+[thread 13] 0 keys lost!
 [thread 14] 0 keys lost!
-[thread 13] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 5.361619 seconds
+[thread 8] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 9] 0 keys lost!
+[thread 11] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 10] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 4] 0 keys lost!
+[thread 7] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.317409 seconds
+
+SPIN:
+
 root@00c8b66ebaa9:/# for i in {1..15}; do ./parallel_spin $i; done
-[main] Inserted 100000 keys in 0.010266 seconds
+[main] Inserted 100000 keys in 0.007350 seconds
 [thread 0] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.439188 seconds
-[main] Inserted 100000 keys in 0.004158 seconds
-[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 3.490576 seconds
+[main] Inserted 100000 keys in 0.004320 seconds
 [thread 1] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.610336 seconds
-[main] Inserted 100000 keys in 0.004490 seconds
 [thread 0] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 2] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.881662 seconds
-[main] Inserted 100000 keys in 0.008098 seconds
+[main] Retrieved 100000/100000 keys in 2.160957 seconds
+[main] Inserted 100000 keys in 0.004631 seconds
 [thread 1] 0 keys lost!
 [thread 2] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.451746 seconds
+[main] Inserted 100000 keys in 0.007738 seconds
+[thread 1] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.195527 seconds
+[main] Inserted 100000 keys in 0.006597 seconds
+[thread 1] 0 keys lost!
 [thread 0] 0 keys lost!
 [thread 3] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.764078 seconds
-[main] Inserted 100000 keys in 0.006580 seconds
-[thread 2] 0 keys lost!
-[thread 0] 0 keys lost!
 [thread 4] 0 keys lost!
+[thread 2] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.320910 seconds
+[main] Inserted 100000 keys in 0.005589 seconds
 [thread 3] 0 keys lost!
 [thread 1] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.571923 seconds
-[main] Inserted 100000 keys in 0.007124 seconds
-[thread 1] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 0] 0 keys lost!
 [thread 4] 0 keys lost!
+[thread 2] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.467084 seconds
+[main] Inserted 100000 keys in 0.006298 seconds
+[thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
 [thread 0] 0 keys lost!
 [thread 5] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 2] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 4.802082 seconds
-[main] Inserted 100000 keys in 0.016813 seconds
-[thread 1] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 4] 0 keys lost!
 [thread 3] 0 keys lost!
 [thread 6] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 5] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 6.190622 seconds
-[main] Inserted 100000 keys in 0.030308 seconds
+[main] Retrieved 100000/100000 keys in 1.217581 seconds
+[main] Inserted 100000 keys in 0.033795 seconds
 [thread 7] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 3] 0 keys lost!
 [thread 4] 0 keys lost!
 [thread 1] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 6.475139 seconds
-[main] Inserted 100000 keys in 0.023716 seconds
-[thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
 [thread 5] 0 keys lost!
 [thread 6] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.103590 seconds
+[main] Inserted 100000 keys in 0.008592 seconds
 [thread 8] 0 keys lost!
-[thread 7] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 4] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 8.354536 seconds
-[main] Inserted 100000 keys in 0.013573 seconds
-[thread 8] 0 keys lost!
-[thread 2] 0 keys lost!
 [thread 3] 0 keys lost!
+[thread 6] 0 keys lost!
 [thread 4] 0 keys lost!
 [thread 0] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 1] 0 keys lost!
 [thread 7] 0 keys lost!
-[thread 6] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 5] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.171858 seconds
+[main] Inserted 100000 keys in 0.006368 seconds
 [thread 9] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 8.261769 seconds
-[main] Inserted 100000 keys in 0.009672 seconds
-[thread 6] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 5] 0 keys lost!
 [thread 4] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.179760 seconds
+[main] Inserted 100000 keys in 0.037538 seconds
+[thread 4] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 7] 0 keys lost!
 [thread 10] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 8] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 0] 0 keys lost!
 [thread 9] 0 keys lost!
-[thread 7] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 1] 0 keys lost!
 [thread 2] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 8.923012 seconds
-[main] Inserted 100000 keys in 0.022858 seconds
+[thread 6] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.146840 seconds
+[main] Inserted 100000 keys in 0.006977 seconds
+[thread 6] 0 keys lost!
 [thread 11] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 5] 0 keys lost!
-[thread 9] 0 keys lost!
 [thread 8] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 10] 0 keys lost!
-[thread 7] 0 keys lost!
 [thread 3] 0 keys lost!
+[thread 10] 0 keys lost!
+[thread 5] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 9] 0 keys lost!
 [thread 4] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 9.820312 seconds
-[main] Inserted 100000 keys in 0.021814 seconds
+[thread 1] 0 keys lost!
+[thread 0] 0 keys lost!
+[thread 2] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.149144 seconds
+[main] Inserted 100000 keys in 0.007389 seconds
 [thread 12] 0 keys lost!
-[thread 8] 0 keys lost!
-[thread 3] 0 keys lost!
+[thread 10] 0 keys lost!
 [thread 1] 0 keys lost!
 [thread 11] 0 keys lost!
-[thread 2] 0 keys lost!
+[thread 3] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 9] 0 keys lost!
 [thread 5] 0 keys lost!
 [thread 4] 0 keys lost!
+[thread 2] 0 keys lost!
 [thread 0] 0 keys lost!
-[thread 7] 0 keys lost!
-[thread 10] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 9] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 11.911112 seconds
-[main] Inserted 100000 keys in 0.043728 seconds
 [thread 8] 0 keys lost!
-[thread 0] 0 keys lost!
-[thread 5] 0 keys lost!
 [thread 6] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.257966 seconds
+[main] Inserted 100000 keys in 0.040527 seconds
+[thread 5] 0 keys lost!
+[thread 11] 0 keys lost!
+[thread 9] 0 keys lost!
+[thread 6] 0 keys lost!
+[thread 2] 0 keys lost!
+[thread 7] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 1] 0 keys lost!
+[thread 3] 0 keys lost!
 [thread 13] 0 keys lost!
-[thread 3] 0 keys lost!
 [thread 12] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 1] 0 keys lost!
-[thread 7] 0 keys lost!
+[thread 10] 0 keys lost!
 [thread 4] 0 keys lost!
+[thread 0] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.327056 seconds
+[main] Inserted 100000 keys in 0.020879 seconds
+[thread 12] 0 keys lost!
 [thread 9] 0 keys lost!
 [thread 11] 0 keys lost!
-[thread 10] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 14.468317 seconds
-[main] Inserted 100000 keys in 0.072707 seconds
-[thread 12] 0 keys lost!
-[thread 8] 0 keys lost!
-[thread 13] 0 keys lost!
-[thread 3] 0 keys lost!
-[thread 10] 0 keys lost!
-[thread 11] 0 keys lost!
+[thread 7] 0 keys lost!
 [thread 14] 0 keys lost!
-[thread 2] 0 keys lost!
-[thread 9] 0 keys lost!
-[thread 6] 0 keys lost!
-[thread 7] 0 keys lost!
+[thread 13] 0 keys lost!
+[thread 10] 0 keys lost!
+[thread 3] 0 keys lost!
 [thread 1] 0 keys lost!
 [thread 0] 0 keys lost!
-[thread 4] 0 keys lost!
+[thread 8] 0 keys lost!
+[thread 2] 0 keys lost!
 [thread 5] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 13.394484 seconds
-root@00c8b66ebaa9:/# gcc -pthread parallel_hashtable.c -o parallel_hashtable
+[thread 6] 0 keys lost!
+[thread 4] 0 keys lost!
+[main] Retrieved 100000/100000 keys in 1.215456 seconds
+
+HASHTABLE:
+
 root@00c8b66ebaa9:/# for i in {1..15}; do ./parallel_hashtable $i; done
-[main] Inserted 100000 keys in 0.008044 seconds
+[main] Inserted 100000 keys in 0.008588 seconds
 [thread 0] 0 keys lost!
-[main] Retrieved 100000/100000 keys in 3.472851 seconds
-[main] Inserted 100000 keys in 0.002810 seconds
-[thread 1] 1130 keys lost!
-[thread 0] 1076 keys lost!
-[main] Retrieved 97794/100000 keys in 2.174525 seconds
-[main] Inserted 100000 keys in 0.003195 seconds
-[thread 1] 999 keys lost!
-[thread 2] 1116 keys lost!
-[thread 0] 1032 keys lost!
-[main] Retrieved 96853/100000 keys in 1.499037 seconds
-[main] Inserted 100000 keys in 0.004353 seconds
-[thread 0] 1641 keys lost!
-[thread 2] 1508 keys lost!
-[thread 3] 1419 keys lost!
-[thread 1] 1388 keys lost!
-[main] Retrieved 94044/100000 keys in 1.127585 seconds
-[main] Inserted 100000 keys in 0.004220 seconds
-[thread 4] 868 keys lost!
-[thread 2] 1041 keys lost!
-[thread 1] 942 keys lost!
-[thread 3] 1073 keys lost!
-[thread 0] 219 keys lost!
-[main] Retrieved 95857/100000 keys in 1.260656 seconds
-[main] Inserted 100000 keys in 0.004147 seconds
-[thread 4] 1124 keys lost!
-[thread 2] 272 keys lost!
-[thread 5] 277 keys lost!
-[thread 1] 980 keys lost!
-[thread 3] 1272 keys lost!
-[thread 0] 1160 keys lost!
-[main] Retrieved 94915/100000 keys in 1.263881 seconds
-[main] Inserted 100000 keys in 0.004114 seconds
-[thread 5] 408 keys lost!
-[thread 1] 366 keys lost!
-[thread 4] 1308 keys lost!
-[thread 2] 1169 keys lost!
-[thread 0] 1053 keys lost!
-[thread 6] 294 keys lost!
-[thread 3] 985 keys lost!
-[main] Retrieved 94417/100000 keys in 1.277321 seconds
-[main] Inserted 100000 keys in 0.003835 seconds
-[thread 5] 746 keys lost!
-[thread 7] 260 keys lost!
-[thread 6] 312 keys lost!
-[thread 4] 413 keys lost!
-[thread 3] 880 keys lost!
-[thread 1] 661 keys lost!
-[thread 0] 446 keys lost!
-[thread 2] 996 keys lost!
-[main] Retrieved 95286/100000 keys in 1.178111 seconds
-[main] Inserted 100000 keys in 0.004221 seconds
-[thread 8] 390 keys lost!
-[thread 5] 346 keys lost!
-[thread 7] 286 keys lost!
-[thread 3] 540 keys lost!
-[thread 1] 673 keys lost!
-[thread 4] 1123 keys lost!
-[thread 2] 991 keys lost!
-[thread 6] 1046 keys lost!
-[thread 0] 909 keys lost!
-[main] Retrieved 93696/100000 keys in 1.135256 seconds
-[main] Inserted 100000 keys in 0.004256 seconds
-[thread 6] 437 keys lost!
-[thread 7] 298 keys lost!
-[thread 4] 460 keys lost!
-[thread 8] 327 keys lost!
-[thread 9] 174 keys lost!
-[thread 3] 671 keys lost!
-[thread 1] 461 keys lost!
-[thread 5] 463 keys lost!
-[thread 0] 552 keys lost!
-[thread 2] 362 keys lost!
-[main] Retrieved 95795/100000 keys in 1.214428 seconds
-[main] Inserted 100000 keys in 0.004398 seconds
-[thread 7] 155 keys lost!
-[thread 10] 107 keys lost!
-[thread 6] 397 keys lost!
-[thread 8] 362 keys lost!
-[thread 1] 499 keys lost!
-[thread 9] 191 keys lost!
-[thread 4] 899 keys lost!
-[thread 3] 932 keys lost!
-[thread 5] 996 keys lost!
-[thread 0] 589 keys lost!
-[thread 2] 1073 keys lost!
-[main] Retrieved 93800/100000 keys in 1.194605 seconds
-[main] Inserted 100000 keys in 0.004380 seconds
-[thread 8] 324 keys lost!
-[thread 11] 237 keys lost!
-[thread 10] 240 keys lost!
-[thread 3] 670 keys lost!
-[thread 5] 380 keys lost!
-[thread 4] 442 keys lost!
-[thread 7] 175 keys lost!
-[thread 2] 485 keys lost!
-[thread 9] 146 keys lost!
-[thread 0] 576 keys lost!
-[thread 6] 650 keys lost!
-[thread 1] 511 keys lost!
-[main] Retrieved 95164/100000 keys in 1.110304 seconds
-[main] Inserted 100000 keys in 0.004186 seconds
-[thread 12] 276 keys lost!
-[thread 10] 213 keys lost!
-[thread 9] 226 keys lost!
-[thread 11] 153 keys lost!
-[thread 8] 336 keys lost!
-[thread 5] 917 keys lost!
-[thread 6] 406 keys lost!
-[thread 1] 481 keys lost!
-[thread 3] 923 keys lost!
-[thread 2] 526 keys lost!
-[thread 4] 902 keys lost!
-[thread 0] 487 keys lost!
-[thread 7] 903 keys lost!
-[main] Retrieved 93251/100000 keys in 1.231107 seconds
-[main] Inserted 100000 keys in 0.004516 seconds
-[thread 8] 361 keys lost!
-[thread 13] 219 keys lost!
-[thread 9] 342 keys lost!
-[thread 7] 303 keys lost!
-[thread 12] 343 keys lost!
-[thread 10] 207 keys lost!
-[thread 5] 629 keys lost!
-[thread 4] 395 keys lost!
-[thread 2] 942 keys lost!
-[thread 3] 436 keys lost!
-[thread 11] 225 keys lost!
-[thread 1] 696 keys lost!
-[thread 6] 1100 keys lost!
-[thread 0] 622 keys lost!
-[main] Retrieved 93180/100000 keys in 1.309135 seconds
-[main] Inserted 100000 keys in 0.004783 seconds
-[thread 10] 372 keys lost!
-[thread 14] 71 keys lost!
-[thread 11] 391 keys lost!
-[thread 7] 410 keys lost!
-[thread 8] 297 keys lost!
-[thread 12] 357 keys lost!
-[thread 5] 264 keys lost!
-[thread 9] 627 keys lost!
-[thread 13] 173 keys lost!
-[thread 6] 274 keys lost!
-[thread 1] 254 keys lost!
-[thread 4] 555 keys lost!
-[thread 0] 517 keys lost!
-[thread 2] 279 keys lost!
-[thread 3] 443 keys lost!
-[main] Retrieved 94716/100000 keys in 1.276916 seconds
+[main] Retrieved 100000/100000 keys in 3.443086 seconds
+[main] Inserted 100000 keys in 0.002940 seconds
+[thread 1] 1007 keys lost!
+[thread 0] 900 keys lost!
+[main] Retrieved 98093/100000 keys in 2.160447 seconds
+[main] Inserted 100000 keys in 0.003101 seconds
+[thread 1] 1098 keys lost!
+[thread 0] 1106 keys lost!
+[thread 2] 957 keys lost!
+[main] Retrieved 96839/100000 keys in 1.497893 seconds
+[main] Inserted 100000 keys in 0.004519 seconds
+[thread 3] 1354 keys lost!
+[thread 2] 1562 keys lost!
+[thread 1] 1343 keys lost!
+[thread 0] 1389 keys lost!
+[main] Retrieved 94352/100000 keys in 1.165852 seconds
+[main] Inserted 100000 keys in 0.004179 seconds
+[thread 4] 1167 keys lost!
+[thread 2] 1133 keys lost!
+[thread 0] 1175 keys lost!
+[thread 1] 1064 keys lost!
+[thread 3] 77 keys lost!
+[main] Retrieved 95384/100000 keys in 1.490138 seconds
+[main] Inserted 100000 keys in 0.004587 seconds
+[thread 4] 384 keys lost!
+[thread 1] 1223 keys lost!
+[thread 3] 1157 keys lost!
+[thread 2] 1172 keys lost!
+[thread 5] 314 keys lost!
+[thread 0] 1080 keys lost!
+[main] Retrieved 94670/100000 keys in 1.221625 seconds
+[main] Inserted 100000 keys in 0.004932 seconds
+[thread 5] 177 keys lost!
+[thread 6] 223 keys lost!
+[thread 4] 161 keys lost!
+[thread 1] 969 keys lost!
+[thread 0] 926 keys lost!
+[thread 3] 1102 keys lost!
+[thread 2] 860 keys lost!
+[main] Retrieved 95582/100000 keys in 1.209993 seconds
+[main] Inserted 100000 keys in 0.004880 seconds
+[thread 3] 613 keys lost!
+[thread 2] 483 keys lost!
+[thread 4] 359 keys lost!
+[thread 6] 608 keys lost!
+[thread 5] 544 keys lost!
+[thread 1] 527 keys lost!
+[thread 7] 180 keys lost!
+[thread 0] 399 keys lost!
+[main] Retrieved 96287/100000 keys in 1.142798 seconds
+[main] Inserted 100000 keys in 0.004446 seconds
+[thread 7] 257 keys lost!
+[thread 5] 724 keys lost!
+[thread 8] 210 keys lost!
+[thread 4] 282 keys lost!
+[thread 3] 366 keys lost!
+[thread 6] 658 keys lost!
+[thread 1] 394 keys lost!
+[thread 2] 895 keys lost!
+[thread 0] 881 keys lost!
+[main] Retrieved 95333/100000 keys in 1.138701 seconds
+[main] Inserted 100000 keys in 0.004765 seconds
+[thread 9] 166 keys lost!
+[thread 3] 652 keys lost!
+[thread 7] 617 keys lost!
+[thread 5] 279 keys lost!
+[thread 4] 256 keys lost!
+[thread 2] 445 keys lost!
+[thread 1] 881 keys lost!
+[thread 8] 148 keys lost!
+[thread 6] 245 keys lost!
+[thread 0] 802 keys lost!
+[main] Retrieved 95509/100000 keys in 1.136251 seconds
+[main] Inserted 100000 keys in 0.004496 seconds
+[thread 7] 265 keys lost!
+[thread 8] 693 keys lost!
+[thread 10] 242 keys lost!
+[thread 3] 475 keys lost!
+[thread 4] 278 keys lost!
+[thread 6] 736 keys lost!
+[thread 9] 375 keys lost!
+[thread 2] 908 keys lost!
+[thread 0] 418 keys lost!
+[thread 1] 840 keys lost!
+[thread 5] 308 keys lost!
+[main] Retrieved 94462/100000 keys in 1.174661 seconds
+[main] Inserted 100000 keys in 0.004705 seconds
+[thread 10] 238 keys lost!
+[thread 11] 204 keys lost!
+[thread 8] 263 keys lost!
+[thread 5] 335 keys lost!
+[thread 6] 316 keys lost!
+[thread 1] 396 keys lost!
+[thread 2] 475 keys lost!
+[thread 4] 512 keys lost!
+[thread 0] 670 keys lost!
+[thread 7] 307 keys lost!
+[thread 9] 109 keys lost!
+[thread 3] 165 keys lost!
+[main] Retrieved 96010/100000 keys in 1.198868 seconds
+[main] Inserted 100000 keys in 0.004434 seconds
+[thread 10] 67 keys lost!
+[thread 12] 32 keys lost!
+[thread 7] 310 keys lost!
+[thread 6] 288 keys lost!
+[thread 9] 59 keys lost!
+[thread 8] 130 keys lost!
+[thread 5] 318 keys lost!
+[thread 11] 25 keys lost!
+[thread 2] 1155 keys lost!
+[thread 0] 1174 keys lost!
+[thread 4] 218 keys lost!
+[thread 3] 1100 keys lost!
+[thread 1] 1197 keys lost!
+[main] Retrieved 93927/100000 keys in 1.121228 seconds
+[main] Inserted 100000 keys in 0.004719 seconds
+[thread 11] 86 keys lost!
+[thread 12] 174 keys lost!
+[thread 9] 220 keys lost!
+[thread 10] 225 keys lost!
+[thread 6] 179 keys lost!
+[thread 8] 237 keys lost!
+[thread 13] 53 keys lost!
+[thread 3] 280 keys lost!
+[thread 5] 146 keys lost!
+[thread 4] 250 keys lost!
+[thread 1] 807 keys lost!
+[thread 7] 169 keys lost!
+[thread 0] 765 keys lost!
+[thread 2] 807 keys lost!
+[main] Retrieved 95602/100000 keys in 1.149120 seconds
+[main] Inserted 100000 keys in 0.004520 seconds
+[thread 12] 237 keys lost!
+[thread 9] 470 keys lost!
+[thread 8] 290 keys lost!
+[thread 13] 214 keys lost!
+[thread 6] 290 keys lost!
+[thread 11] 247 keys lost!
+[thread 10] 256 keys lost!
+[thread 4] 469 keys lost!
+[thread 14] 22 keys lost!
+[thread 7] 382 keys lost!
+[thread 2] 694 keys lost!
+[thread 3] 214 keys lost!
+[thread 5] 644 keys lost!
+[thread 1] 700 keys lost!
+[thread 0] 467 keys lost!
+[main] Retrieved 94404/100000 keys in 1.348898 seconds

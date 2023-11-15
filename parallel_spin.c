@@ -47,14 +47,11 @@ void insert(int key, int val) {
 // Returns NULL if the key isn't found in the table
 bucket_entry * retrieve(int key) {
   bucket_entry *b;
-  pthread_spin_lock(&spinlock);
   for (b = table[key % NUM_BUCKETS]; b != NULL; b = b->next) {
     if (b->key == key) {
-      pthread_spin_unlock(&spinlock);
       return b;
     }
   }
-  pthread_spin_unlock(&spinlock);
   return NULL;
 }
 
