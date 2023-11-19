@@ -9,7 +9,7 @@
 #define NUM_KEYS 100000   // Number of keys inserted per thread
 int num_threads = 1;      // Number of threads (configurable)
 int keys[NUM_KEYS];
-pthread_spinlock_t spinlock = PTHREAD_PROCESS_PRIVATE;
+pthread_spinlock_t spinlock;
 
 typedef struct _bucket_entry {
   int key;
@@ -47,11 +47,14 @@ void insert(int key, int val) {
 // Returns NULL if the key isn't found in the table
 bucket_entry * retrieve(int key) {
   bucket_entry *b;
+  pthread_spin_lock(&spinlock);
   for (b = table[key % NUM_BUCKETS]; b != NULL; b = b->next) {
     if (b->key == key) {
+      pthread_spin_unlock(&spinlock);
       return b;
     }
   }
+  pthread_spin_unlock(&spinlock);
   return NULL;
 }
 
@@ -102,6 +105,10 @@ int main(int argc, char **argv) {
     panic("out of memory allocating thread handles");
   }
 
+  if (pthread_spin_init(&lock, 0) != 0) {
+    panic("failed to initialize spinlock");
+  }
+
   // Insert keys in parallel
   start = now();
   for (i = 0; i < num_threads; i++) {
@@ -133,6 +140,8 @@ int main(int argc, char **argv) {
     total_lost += lost_keys[i];
   }
   end = now();
+
+  pthread_spin_destroy(&lock);
 
   printf("[main] Retrieved %ld/%d keys in %f seconds\n", NUM_KEYS - total_lost, NUM_KEYS, end - start);
 
