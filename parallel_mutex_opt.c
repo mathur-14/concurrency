@@ -9,7 +9,7 @@
 #define NUM_KEYS 100000   // Number of keys inserted per thread
 int num_threads = 1;      // Number of threads (configurable)
 int keys[NUM_KEYS];
-pthread_spinlock_t spinlock;
+pthread_mutex_t lock[NUM_BUCKETS];
 
 typedef struct _bucket_entry {
   int key;
@@ -35,26 +35,23 @@ void insert(int key, int val) {
   int i = key % NUM_BUCKETS;
   bucket_entry *e = (bucket_entry *) malloc(sizeof(bucket_entry));
   if (!e) panic("No memory to allocate bucket!");
-  pthread_spin_lock(&spinlock);
+  pthread_mutex_lock(&(lock[i]));
   e->next = table[i];
   e->key = key;
   e->val = val;
   table[i] = e;
-  pthread_spin_unlock(&spinlock);
+  pthread_mutex_unlock(&(lock[i]));
 }
 
 // Retrieves an entry from the hash table by key
 // Returns NULL if the key isn't found in the table
 bucket_entry * retrieve(int key) {
   bucket_entry *b;
-  pthread_spin_lock(&spinlock);
   for (b = table[key % NUM_BUCKETS]; b != NULL; b = b->next) {
     if (b->key == key) {
-      pthread_spin_unlock(&spinlock);
       return b;
     }
   }
-  pthread_spin_unlock(&spinlock);
   return NULL;
 }
 
@@ -105,8 +102,10 @@ int main(int argc, char **argv) {
     panic("out of memory allocating thread handles");
   }
 
-  if (pthread_spin_init(&spinlock, 0) != 0) {
-    panic("failed to initialize spinlock");
+  for (i = 0; i < NUM_BUCKETS; i++) {
+    if (pthread_mutex_init(&(lock[i]), NULL) != 0) {
+      panic("failure: initialize mutex");
+    }
   }
 
   // Insert keys in parallel
@@ -141,8 +140,9 @@ int main(int argc, char **argv) {
   }
   end = now();
 
-  pthread_spin_destroy(&spinlock);
-
+  for (i = 0; i < NUM_BUCKETS; i++) {
+    pthread_mutex_destroy(&(lock[i]));
+  }
   printf("[main] Retrieved %ld/%d keys in %f seconds\n", NUM_KEYS - total_lost, NUM_KEYS, end - start);
 
   return 0;
